@@ -1,0 +1,103 @@
+@import "/home/harry/.cache/wallust/colors-waybar.css";
+
+* {
+    font-family: monospace;
+    color: @foreground;
+    border-radius: 4px;
+    text-shadow: none;
+    transition: none;
+    min-height: 0;
+}
+
+#waybar {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(70deg, @background, @color0);
+    font-size: 15px;
+}
+
+tooltip {
+    background: @color2;
+    border: none;
+    box-shadow: 4px 4px 0 @background;
+    text-shadow: none;
+}
+
+tooltip label {
+}
+
+.module,
+button {
+    border: none;
+    padding: 1px 8px;
+    margin: 2px 2px 2px 2px;
+    box-shadow: none;
+}
+
+/* Misaligned icon fix */
+#network {
+    padding: 1px 12px 1px 8px
+}
+
+/* Hover state for clickable modules */
+button:hover,
+#blueman-applet:hover,
+#network:hover,
+#bluetooth:hover,
+#pulseaudio:hover {
+    background: @color2;
+    border: none;
+    box-shadow:
+        2px 2px 0 @color5,
+        0px 0px 2px 0 @color6 inset,
+        -1px -1px 2px 0 @background inset;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    padding: 4px;
+}
+
+.modules-left {
+}
+
+.modules-center {
+    font-size: 20px;
+}
+
+.modules-right {
+}
+
+#workspaces {
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+
+#workspaces button.active,
+#workspaces button.active:hover {
+    background: @color5;
+    box-shadow:
+        2px 2px 0 @color2,
+        0px 0px 2px 0 @color6 inset,
+        -1px -1px 2px 0 @background inset;
+}
+
+#window {
+    box-shadow: none;
+}
+
+#battery.warning {
+    color: orange;
+}
+
+#battery.critical {
+    color: red;
+}
+
+#temperature.critical {
+    color: red;
+}

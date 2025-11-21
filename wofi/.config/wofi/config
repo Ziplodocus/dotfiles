@@ -1,0 +1,12 @@
+color = /home/harry/.cache/wallust/colors
+mode = drun
+insensitive = true
+matching = fuzzy
+columns = 3
+width = 1000
+line_wrap = word
+dynamic_lines = true
+prompt = Search...
+allow_images = true
+image_size = 20
+no_actions = true
