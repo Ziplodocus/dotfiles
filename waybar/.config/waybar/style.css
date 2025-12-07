@@ -3,17 +3,16 @@
 * {
     font-family: monospace;
     color: @foreground;
-    border-radius: 4px;
     text-shadow: none;
     transition: none;
     min-height: 0;
+    border-radius: 0;
 }
 
 #waybar {
     border-radius: 0;
     margin: 0;
     padding: 0;
-    background: linear-gradient(70deg, @background, @color0);
     font-size: 15px;
 }
 
@@ -30,14 +29,19 @@ tooltip label {
 .module,
 button {
     border: none;
-    padding: 1px 8px;
+    padding: 1px 10px;
     margin: 2px 2px 2px 2px;
     box-shadow: none;
+    border-radius: 10px;
+}
+
+button {
+    padding: 7px 10px;
 }
 
 /* Misaligned icon fix */
 #network {
-    padding: 1px 12px 1px 8px
+    padding: 1px 15px 1px 9px;
 }
 
 /* Hover state for clickable modules */
@@ -49,7 +53,6 @@ button:hover,
     background: @color2;
     border: none;
     box-shadow:
-        2px 2px 0 @color5,
         0px 0px 2px 0 @color6 inset,
         -1px -1px 2px 0 @background inset;
 }
@@ -61,13 +64,16 @@ button:hover,
 }
 
 .modules-left {
+    margin: 0px;
 }
 
 .modules-center {
+    margin: 0;
     font-size: 20px;
 }
 
 .modules-right {
+    margin: 0px;
 }
 
 #workspaces {
@@ -81,7 +87,6 @@ button:hover,
 #workspaces button.active:hover {
     background: @color5;
     box-shadow:
-        2px 2px 0 @color2,
         0px 0px 2px 0 @color6 inset,
         -1px -1px 2px 0 @background inset;
 }

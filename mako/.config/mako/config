@@ -4,6 +4,7 @@ background-color=#11342f
 width=600
 height=240
 border-size=2
+padding=12
 border-color=#88c0d0
 border-radius=0
 icons=1

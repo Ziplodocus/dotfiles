@@ -1,7 +1,3 @@
 
-export XCURSOR_SIZE=24
 export HYPRCURSOR_SIZE=4
-export GTK_THEME=Adwaita:dark
-export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
-export QT_STYLE_OVERRIDE=Adwaita-Dark
-
+export DESKTOP_BG="~/pictures/wallpapers/mountain-lake-green-1440p.png"

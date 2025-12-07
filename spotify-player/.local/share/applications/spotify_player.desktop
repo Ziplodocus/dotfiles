@@ -6,3 +6,4 @@ Terminal=true
 Exec=spotify_player
 Categories=Music;
 Keywords=Music;Steaming;
+StartupNotify=true
