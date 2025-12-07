@@ -1,7 +1,6 @@
 #window {
     font-family: monospace;
     color: --wofi-color1;
-    overflow: hidden;
     border-radius: 6px;
     background: linear-gradient(--wofi-color8, --wofi-color13);
 }

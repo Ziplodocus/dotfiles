@@ -10,3 +10,4 @@ prompt = Search...
 allow_images = true
 image_size = 20
 no_actions = true
+term = kitty
