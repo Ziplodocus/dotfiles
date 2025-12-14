@@ -23,6 +23,7 @@ fi
     stow hypr &&
     stow kitty &&
     stow mako &&
+    stow helix &&
     stow spotify-player &&
     stow uwsm &&
     stow wallust &&
