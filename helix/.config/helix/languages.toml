@@ -14,3 +14,7 @@ language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
 name = "go"
 auto-format = true
 formatter = { command = "goimports" }
+
+[[language]]
+name = "php"
+language-servers = [ "phpactor", "tailwindcss-ls" ]
