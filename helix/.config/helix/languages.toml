@@ -3,8 +3,14 @@ command = "tailwindcss-language-server"
 args = ["--stdio"]
 
 [[language]]
+name = "gotmpl"
+language-servers = ["gopls", "vscode-html-language-server", "tailwindcss-ls"]
+file-types = ["gotmpl", "gohtml", "go.html"]
+
+[[language]]
 name = "html"
 language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+file-types = ["gotmpl", "gohtml", "html", "htm"]
 
 [[language]]
 name = "css"

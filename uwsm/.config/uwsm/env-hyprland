@@ -1,3 +1,4 @@
 
 export HYPRCURSOR_SIZE=4
 export DESKTOP_BG="~/pictures/wallpapers/mountain-lake-green-1440p.png"
+export EDITOR="helix"
