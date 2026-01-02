@@ -23,4 +23,4 @@ formatter = { command = "goimports" }
 
 [[language]]
 name = "php"
-language-servers = [ "phpactor", "tailwindcss-ls" ]
+language-servers = [ "intelephense", "tailwindcss-ls" ]
