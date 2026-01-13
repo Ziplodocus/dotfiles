@@ -6,12 +6,12 @@ height=240
 border-size=2
 padding=12
 border-color=#88c0d0
-border-radius=0
+border-radius=6
 icons=1
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
-font=monospace 16
+font=sans-serif 16
 
 [urgency=low]
 border-color=#11342f
@@ -21,7 +21,7 @@ border-color=#102420
 
 [urgency=high]
 border-color=#08180f
-default-timeout=0
+default-timeout=60
 
 [category=mpd]
 default-timeout=2000
