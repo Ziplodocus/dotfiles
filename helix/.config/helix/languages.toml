@@ -24,3 +24,9 @@ formatter = { command = "goimports" }
 [[language]]
 name = "php"
 language-servers = [ "intelephense", "tailwindcss-ls" ]
+
+[[language]]
+name = "nginx"
+scope = "source.nginx"
+injection-regex = "nginx"
+file-types = ["conf"]
