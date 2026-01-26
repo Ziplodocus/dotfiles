@@ -29,5 +29,6 @@ fi
     stow wallust &&
     stow waybar &&
     stow wofi &&
+    stow starship &&
     stow yazi
 )

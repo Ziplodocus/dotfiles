@@ -12,6 +12,7 @@ cd $SELF_DIR;
 . ./install-yazi.sh
 . ./install-zoxide.sh
 . ./install-spotify-player.sh
+. ./install-starship.sh
 . ./install-stow.sh
 
 . ./install-dotfiles.sh
