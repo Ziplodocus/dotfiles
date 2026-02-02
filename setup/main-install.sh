@@ -1,12 +1,16 @@
 #! /bin/sh
 
-readonly CURRENT_DIR=$(pwd)
-readonly SELF_DIR=$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+readonly CURRENT_DIR="$(pwd)"
+readonly SELF_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-cd $SELF_DIR;
+cd "$SELF_DIR" || (echo "Couldn't change directory 🤔" && exit);
 
+. ./install-core-packages.sh
 . ./install-hyprland.sh
+. ./install-kitty.sh
+. ./install-helix.sh
 . ./install-waybar.sh
+. ./install-blueman.sh
 . ./install-mako.sh
 . ./install-wofi.sh
 . ./install-yazi.sh
@@ -15,6 +19,8 @@ cd $SELF_DIR;
 . ./install-starship.sh
 . ./install-stow.sh
 
+. ./install-firacode-nerd-font.sh
+
 . ./install-dotfiles.sh
 
-cd $CURRENT_DIR;
+cd "$CURRENT_DIR" || exit;

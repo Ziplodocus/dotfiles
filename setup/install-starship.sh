@@ -1,3 +1,3 @@
 #! /bin/sh
 
-sudo pacman -S --noconfirm starship
+sudo pacman -S --needed --noconfirm starship

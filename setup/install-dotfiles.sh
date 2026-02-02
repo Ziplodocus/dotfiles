@@ -13,13 +13,13 @@ fi
 
 # Remove exisiting dotfiles
 (
-    cd $USER_DIR/.config
-    rm -r hypr kitty mako spotify-player uwsm wallust waybar wofi yazi
+    cd "$USER_DIR/.config" || exit
+    rm -r hypr kitty mako spotify-player uwsm wallust waybar wofi yazi starship.toml helix
 )
 
 # Symlink the repo configs via stow
 (
-    cd $USER_DIR/dotfiles &&
+    cd "$USER_DIR/dotfiles" &&
     stow hypr &&
     stow kitty &&
     stow mako &&
