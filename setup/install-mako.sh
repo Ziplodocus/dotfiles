@@ -1,3 +1,3 @@
-#! /bin/sh
+#! /usr/bin/sh
 
 sudo pacman -S --needed --noconfirm mako
