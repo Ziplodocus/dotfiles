@@ -1,7 +1,5 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-add_newline=true
-
 format = """
 [](red)\
 $os\
@@ -27,7 +25,7 @@ $conda\
 $time\
 [ ](fg:lavender)\
 $cmd_duration\
-$line_break
+$line_break\
 $character"""
 
 palette = 'catppuccin_mocha'
@@ -66,7 +64,7 @@ format = '[ $user]($style)'
 [directory]
 style = "bg:peach fg:crust"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 6
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -142,13 +140,13 @@ format = '[$symbol$environment ]($style)'
 ignore_base = false
 
 [time]
-disabled = false
+disabled = true
 time_format = "%R"
 style = "bg:lavender"
 format = '[[  $time ](fg:crust bg:lavender)]($style)'
 
 [line_break]
-disabled = true
+disabled = false
 
 [character]
 disabled = false
