@@ -1,0 +1,132 @@
+{
+  "colorize_brackets": true,
+  "helix_mode": false,
+  "completions": {
+    "lsp_insert_mode": "replace"
+  },
+  "terminal": {
+    "dock": "bottom",
+    "font_family": "FiraCode Nerd Font"
+  },
+  "linked_edits": true,
+  "edit_predictions": {
+    "provider": "zed",
+    "mode": "subtle"
+  },
+  "prettier": {
+    "allowed": true,
+    "singleQuote": true
+  },
+  "languages": {
+    "HTML": {
+      "hard_tabs": false,
+      "formatter": "language_server"
+    },
+    "PHP": {
+      "language_servers": [
+        "intelephense",
+        "emmet-language-server",
+        "tailwindcss-language-server",
+        "!phpactor",
+        "!phptools"
+      ],
+      "formatter": "language_server"
+    },
+    "CSS": {
+      "language_servers": [
+        "vscode-css-language-server",
+        "tailwindcss-language-server"
+      ],
+      "hard_tabs": null
+    }
+  },
+  "agent": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4"
+    },
+    "model_parameters": []
+  },
+  "ui_font_family": ".ZedSans",
+  "ui_font_size": 16.0,
+  "buffer_font_family": "Fira Code",
+  "buffer_font_size": 14.0,
+  "buffer_font_features": {
+    "calt": true
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "hide_hidden": false,
+    "hide_root": true,
+    "auto_fold_dirs": true,
+    "starts_open": true,
+    "indent_size": 18.0,
+    "folder_icons": false,
+    "entry_spacing": "standard",
+    "dock": "right"
+  },
+  "show_completions_on_input": true,
+  "show_edit_predictions": true,
+  "tab_bar": {
+    "show": true,
+    "show_nav_history_buttons": false
+  },
+  // Show file type icons in the tab bar. Also color them according to the
+  // git status.
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "lsp": {
+    "vscode-css-language-server": {
+      "settings": {
+        "css": {
+          "lint": {
+            "unknownAtRules": "ignore"
+          }
+        }
+      }
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": [
+          "cva",
+          "cx"
+        ],
+        "experimental": {
+          "classRegex": [
+            "[cls|className]\\s\\:\\=\\s\"([^\"]*)"
+          ]
+        }
+      }
+    },
+    "intelephense": {
+      "settings": {
+        "format": {
+          "enable": true,
+          "braces": "k&r"
+        }
+      }
+    },
+    "phpactor": {
+      "settings": {
+        "enabled": false
+      }
+    }
+  },
+  "format_on_save": "on",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "base_keymap": "VSCode",
+  "vim_mode": false,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Light",
+    "dark": "Catppuccin Mocha"
+  }
+}
