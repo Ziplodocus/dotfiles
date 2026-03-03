@@ -1,61 +1,81 @@
 {
+  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "sticky_scroll": {
+    "enabled": true,
+  },
+  "expand_excerpt_lines": 4,
+  "double_click_in_multibuffer": "open",
+  "which_key": {
+    "enabled": true,
+  },
   "colorize_brackets": true,
   "helix_mode": false,
   "completions": {
-    "lsp_insert_mode": "replace"
+    "lsp_insert_mode": "replace",
   },
   "terminal": {
     "dock": "bottom",
-    "font_family": "FiraCode Nerd Font"
+    "font_family": "FiraCode Nerd Font",
   },
   "linked_edits": true,
+  "show_edit_predictions": true,
   "edit_predictions": {
     "provider": "zed",
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "prettier": {
     "allowed": true,
-    "singleQuote": true
+    "singleQuote": true,
   },
   "languages": {
     "HTML": {
       "hard_tabs": false,
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "PHP": {
+      "inlay_hints": {
+        "show_background": false,
+        "enabled": true,
+      },
+      "indent_guides": {
+        "background_coloring": "disabled",
+        "coloring": "indent_aware",
+      },
       "language_servers": [
         "intelephense",
         "emmet-language-server",
         "tailwindcss-language-server",
         "!phpactor",
-        "!phptools"
+        "!phptools",
       ],
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "CSS": {
       "language_servers": [
         "vscode-css-language-server",
-        "tailwindcss-language-server"
+        "tailwindcss-language-server",
       ],
-      "hard_tabs": null
-    }
+      "hard_tabs": null,
+    },
   },
   "agent": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "model": "claude-sonnet-4",
     },
-    "model_parameters": []
+    "model_parameters": [],
   },
   "ui_font_family": ".ZedSans",
-  "ui_font_size": 16.0,
-  "buffer_font_family": "Fira Code",
-  "buffer_font_size": 14.0,
+  "ui_font_size": 18.0,
+  "buffer_font_family": "FiraCode Nerd Font",
+  "buffer_line_height": "comfortable",
+  "buffer_font_weight": 400.0,
+  "buffer_font_size": 16.0,
   "buffer_font_features": {
-    "calt": true
+    "calt": true,
   },
   "git_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "project_panel": {
     "hide_hidden": false,
@@ -65,68 +85,152 @@
     "indent_size": 18.0,
     "folder_icons": false,
     "entry_spacing": "standard",
-    "dock": "right"
+    "dock": "right",
+    "sort_mode": "directories_first",
+    "drag_and_drop": true,
+    "indent_guides": {
+      "show": "never",
+    },
+    "sticky_scroll": true,
+    "auto_reveal_entries": true,
+    "git_status": true,
+    "file_icons": true,
+    "hide_gitignore": false,
+    "default_width": 240.0,
   },
+  "ensure_final_newline_on_save": false,
   "show_completions_on_input": true,
-  "show_edit_predictions": true,
+  "diagnostics": {
+    "inline": {
+      "update_debounce_ms": 150,
+    },
+    "lsp_pull_diagnostics": {
+      "debounce_ms": 100,
+    },
+  },
   "tab_bar": {
     "show": true,
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": false,
   },
-  // Show file type icons in the tab bar. Also color them according to the
-  // git status.
   "tabs": {
     "file_icons": true,
-    "git_status": true
+    "git_status": true,
+  },
+  "format_on_save": "on",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "base_keymap": "Cursor",
+  "vim_mode": false,
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha",
   },
   "lsp": {
     "vscode-css-language-server": {
       "settings": {
         "css": {
           "lint": {
-            "unknownAtRules": "ignore"
-          }
-        }
-      }
+            "unknownAtRules": "ignore",
+          },
+        },
+      },
     },
     "tailwindcss-language-server": {
       "settings": {
-        "classFunctions": [
-          "cva",
-          "cx"
-        ],
-        "experimental": {
-          "classRegex": [
-            "[cls|className]\\s\\:\\=\\s\"([^\"]*)"
-          ]
-        }
-      }
+        "classFunctions": ["cva", "cx"],
+      },
     },
     "intelephense": {
       "settings": {
         "format": {
           "enable": true,
-          "braces": "k&r"
-        }
-      }
+          "braces": "k&r",
+        },
+        "stubs": [
+          "apache",
+          "bcmath",
+          "bz2",
+          "calendar",
+          "com_dotnet",
+          "Core",
+          "ctype",
+          "curl",
+          "date",
+          "dba",
+          "dom",
+          "enchant",
+          "exif",
+          "FFI",
+          "fileinfo",
+          "filter",
+          "fpm",
+          "ftp",
+          "gd",
+          "gettext",
+          "gmp",
+          "hash",
+          "iconv",
+          "imap",
+          "intl",
+          "json",
+          "ldap",
+          "libxml",
+          "mbstring",
+          "meta",
+          "mysqli",
+          "oci8",
+          "odbc",
+          "openssl",
+          "pcntl",
+          "pcre",
+          "PDO",
+          "pdo_ibm",
+          "pdo_mysql",
+          "pdo_pgsql",
+          "pdo_sqlite",
+          "pgsql",
+          "Phar",
+          "posix",
+          "pspell",
+          "readline",
+          "Reflection",
+          "session",
+          "shmop",
+          "SimpleXML",
+          "snmp",
+          "soap",
+          "sockets",
+          "sodium",
+          "SPL",
+          "sqlite3",
+          "standard",
+          "superglobals",
+          "sysvmsg",
+          "sysvsem",
+          "sysvshm",
+          "tidy",
+          "tokenizer",
+          "xml",
+          "xmlreader",
+          "xmlrpc",
+          "xmlwriter",
+          "xsl",
+          "Zend OPcache",
+          "zip",
+          "zlib",
+          "wordpress",
+          "wordpress-globals",
+        ],
+      },
     },
     "phpactor": {
       "settings": {
-        "enabled": false
-      }
-    }
+        "enabled": false,
+      },
+    },
   },
-  "format_on_save": "on",
-  "icon_theme": {
-    "mode": "system",
-    "light": "Zed (Default)",
-    "dark": "Zed (Default)"
-  },
-  "base_keymap": "VSCode",
-  "vim_mode": false,
-  "theme": {
-    "mode": "system",
-    "light": "Ayu Light",
-    "dark": "Catppuccin Mocha"
-  }
 }
