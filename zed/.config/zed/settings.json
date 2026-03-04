@@ -122,7 +122,7 @@
     "light": "Zed (Default)",
     "dark": "Zed (Default)",
   },
-  "base_keymap": "Cursor",
+  "base_keymap": "VSCode",
   "vim_mode": false,
   "theme": {
     "mode": "system",
