@@ -144,6 +144,24 @@
         "classFunctions": ["cva", "cx"],
       },
     },
+    "rust-analyzer": {
+      "initialization_options": {
+        "cargo": {
+          "allFeatures": true,
+          "features": "all",
+        },
+        "cargoFeatures": {
+          "allFeatures": true,
+        },
+        "cargo-watch": {
+          "arguments": "--all-features",
+          "features": "all",
+        },
+        "procMacro": {
+          "enable": true,
+        },
+      },
+    },
     "intelephense": {
       "settings": {
         "format": {
@@ -230,6 +248,7 @@
     "phpactor": {
       "settings": {
         "enabled": false,
+        "disabled": true,
       },
     },
   },
