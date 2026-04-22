@@ -32,6 +32,7 @@
       "hard_tabs": false,
       "formatter": "language_server",
     },
+    "Go HTML Template": {},
     "PHP": {
       "inlay_hints": {
         "show_background": false,
