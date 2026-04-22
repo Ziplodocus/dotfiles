@@ -16,9 +16,9 @@ sudo pacman -S --needed --noconfirm git base-devel
 if [ -d yay ]; then
   cd "yay"
   git pull
-elif;
+else
   git clone https://aur.archlinux.org/yay.git
   cd "yay"
 fi
 
-sudo makepkg -si
+makepkg -si
