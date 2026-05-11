@@ -1,5 +1,12 @@
 {
   "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
+  "cli_default_open_behavior": "existing_window",
+  "outline_panel": {
+    "dock": "left",
+  },
+  "collaboration_panel": {
+    "dock": "left",
+  },
   "sticky_scroll": {
     "enabled": true,
   },
@@ -60,6 +67,7 @@
     },
   },
   "agent": {
+    "dock": "right",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4",
