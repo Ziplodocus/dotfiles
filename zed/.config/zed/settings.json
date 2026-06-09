@@ -1,5 +1,4 @@
 {
-  "$schema": "https://zed.dev/schema/themes/v0.1.0.json",
   "cli_default_open_behavior": "existing_window",
   "outline_panel": {
     "dock": "left",
@@ -32,11 +31,9 @@
   },
   "prettier": {
     "allowed": true,
-    "singleQuote": true,
   },
   "languages": {
     "HTML": {
-      "hard_tabs": false,
       "formatter": "language_server",
     },
     "Go HTML Template": {},
@@ -46,7 +43,6 @@
         "enabled": true,
       },
       "indent_guides": {
-        "background_coloring": "disabled",
         "coloring": "indent_aware",
       },
       "language_servers": [
@@ -63,16 +59,10 @@
         "vscode-css-language-server",
         "tailwindcss-language-server",
       ],
-      "hard_tabs": null,
     },
   },
   "agent": {
     "dock": "right",
-    "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4",
-    },
-    "model_parameters": [],
   },
   "ui_font_family": ".ZedSans",
   "ui_font_size": 18.0,
@@ -92,29 +82,24 @@
     "auto_fold_dirs": true,
     "starts_open": true,
     "indent_size": 18.0,
-    "folder_icons": false,
+    "folder_icons": true,
     "entry_spacing": "standard",
     "dock": "right",
     "sort_mode": "directories_first",
     "drag_and_drop": true,
-    "indent_guides": {
-      "show": "never",
-    },
     "sticky_scroll": true,
     "auto_reveal_entries": true,
     "git_status": true,
     "file_icons": true,
     "hide_gitignore": false,
-    "default_width": 240.0,
+    "default_width": 260.0,
   },
-  "ensure_final_newline_on_save": false,
-  "show_completions_on_input": true,
   "diagnostics": {
     "inline": {
-      "update_debounce_ms": 150,
+      "update_debounce_ms": 100,
     },
     "lsp_pull_diagnostics": {
-      "debounce_ms": 100,
+      "debounce_ms": 50,
     },
   },
   "tab_bar": {
@@ -132,7 +117,6 @@
     "dark": "Zed (Default)",
   },
   "base_keymap": "VSCode",
-  "vim_mode": false,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
@@ -146,11 +130,6 @@
             "unknownAtRules": "ignore",
           },
         },
-      },
-    },
-    "tailwindcss-language-server": {
-      "settings": {
-        "classFunctions": ["cva", "cx"],
       },
     },
     "rust-analyzer": {
@@ -252,12 +231,6 @@
           "wordpress",
           "wordpress-globals",
         ],
-      },
-    },
-    "phpactor": {
-      "settings": {
-        "enabled": false,
-        "disabled": true,
       },
     },
   },

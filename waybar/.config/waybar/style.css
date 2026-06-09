@@ -1,48 +1,53 @@
 @import "/home/harry/.cache/wallust/colors-waybar.css";
 
 * {
-    font-family: monospace;
-    color: @foreground;
-    text-shadow: none;
-    transition: none;
-    min-height: 0;
-    border-radius: 0;
+  font-family: sans-serif;
+  color: @foreground;
+  text-shadow: none;
+  transition: none;
+  min-height: 0;
+  border-radius: 0;
+  letter-spacing: 0.02em;
 }
 
 #waybar {
-    border-radius: 0;
-    margin: 0;
-    padding: 0;
-    font-size: 15px;
-    background-color: transparent;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: transparent;
 }
 
 tooltip {
-    background: @color2;
-    border: none;
-    box-shadow: 4px 4px 0 @background;
-    text-shadow: none;
+  background: @color2;
+  border: none;
+  box-shadow: 4px 4px 0 @background;
+  text-shadow: none;
 }
 
-tooltip label {
-}
+tooltip label {}
 
 .module,
 button {
-    border: none;
-    padding: 1px 10px;
-    margin: 2px 2px 2px 2px;
-    box-shadow: none;
-    border-radius: 10px;
+  border: none;
+  padding: 1px 10px;
+  margin: 2px 2px 2px 2px;
+  box-shadow: none;
+  border-radius: 10px;
 }
 
 button {
-    padding: 7px 10px;
+  padding: 7px 10px;
 }
 
 /* Misaligned icon fix */
 #network {
-    padding: 1px 15px 1px 9px;
+  padding: 1px 15px 1px 9px;
+}
+
+#pulseaudio {
+  font-family: monospace;
+  font-weight: 600;
 }
 
 /* Hover state for clickable modules */
@@ -51,59 +56,59 @@ button:hover,
 #network:hover,
 #bluetooth:hover,
 #pulseaudio:hover {
-    background: @color2;
-    border: none;
-    box-shadow:
-        0px 0px 2px 0 @color6 inset,
-        -1px -1px 2px 0 @background inset;
+  background: @color2;
+  border: none;
+  box-shadow:
+    0px 0px 2px 0 @color6 inset,
+    -1px -1px 2px 0 @background inset;
 }
 
 .modules-left,
 .modules-center,
 .modules-right {
-    padding: 4px;
+  padding: 4px;
 }
 
 .modules-left {
-    margin: 0px;
+  margin: 0px;
 }
 
 .modules-center {
-    margin: 0;
-    font-size: 20px;
+  margin: 0;
+  font-size: 20px;
 }
 
 .modules-right {
-    margin: 0px;
+  margin: 0px;
 }
 
 #workspaces {
-    background: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
 }
 
 #workspaces button.active,
 #workspaces button.active:hover {
-    background: @color5;
-    box-shadow:
-        0px 0px 2px 0 @color6 inset,
-        -1px -1px 2px 0 @background inset;
+  background: @color5;
+  box-shadow:
+    0px 0px 2px 0 @color6 inset,
+    -1px -1px 2px 0 @background inset;
 }
 
 #window {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 #battery.warning {
-    color: orange;
+  color: orange;
 }
 
 #battery.critical {
-    color: red;
+  color: red;
 }
 
 #temperature.critical {
-    color: red;
+  color: red;
 }
