@@ -119,7 +119,7 @@
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Mocha",
+    "light": "Catppuccin Frappé",
     "dark": "Catppuccin Mocha",
   },
   "lsp": {
