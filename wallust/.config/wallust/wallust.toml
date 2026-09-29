@@ -17,8 +17,6 @@ backend = "fastresize"
 # lab - labmixed - lch - lchmixed
 color_space = "lab"
 
-# threshold=50
-
 # Use the most prominent colors in a way that makes sense, a scheme color palette:
 # dark - dark16 - darkcomp - darkcomp16
 # light - light16 - lightcomp - lightcomp16
@@ -36,7 +34,7 @@ check_contrast = true
 # usually something higher than 50 increases the saturation and below
 # decreases it (on a scheme with strong and vivid colors)
 saturation = 40
-threshold = 10
+threshold = 15
 
 # Alpha value for templating, by default 100 (no other use whatsoever)
 #alpha = 100
@@ -50,4 +48,4 @@ threshold = 10
 waybar = { template = 'colors-waybar.css', target = '~/.cache/wallust/colors-waybar.css' }
 colors = { template = 'colors', target = '~/.cache/wallust/colors' }
 kitty = { template = 'colors-kitty.conf', target = '~/.cache/wallust/colors-kitty.conf' }
-hyprland = { template = 'colors-hyprland.conf', target = '~/.cache/wallust/colors-hyprland.conf' }
+lua = { template = 'colors.lua', target = '~/.cache/wallust/colors.lua' }
