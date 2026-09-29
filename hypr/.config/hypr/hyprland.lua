@@ -277,11 +277,11 @@ hl.bind(mainMod .. " + " .. "E", hl.dsp.exec_cmd("uwsm-app -- zeditor"))
 hl.bind(mainMod .. " + " .. "PERIOD", hl.dsp.exec_cmd("uwsm-app -- wofi-emoji"))
 
 -- Logins
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "L", hl.dsp.exec_cmd("hyprshutdown -t 'Logging out' --post-cmd 'loginctl terminate-user harry'"))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "L", hl.dsp.exec_cmd("hyprshutdown --top-label 'Logging out' --post-cmd 'loginctl terminate-user harry'"))
 
--- Power management
-hl.bind(mainMod .. " + " .. "U", hl.dsp.exec_cmd("hyprshutdown -t 'Shutting down...' --post-cmd 'shutdown -P 0'"))
-hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "U", hl.dsp.exec_cmd("hyprshutdown -t 'Rebooting...' --post-cmd 'shutdown -r 0'"))
+-- Power management Pay attention to the warnings in Environment variables, Multi-GPU and Dispatchers sections.
+hl.bind(mainMod .. " + " .. "U", hl.dsp.exec_cmd("hyprshutdown --top-label 'Shutting down...' --post-cmd 'shutdown -P 0'"))
+hl.bind(mainMod .. " + " .. "SHIFT" .. " + " .. "U", hl.dsp.exec_cmd("hyprshutdown --top-label 'Rebooting...' --post-cmd 'reboot'"))
 
 -- Screenshots
 hl.bind("Print", hl.dsp.exec_cmd("hyprshot -m output --freeze"))
